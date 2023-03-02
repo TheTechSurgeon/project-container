@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to the random container</title>
+    </head>
+    <body>
+        <h1>
+            Hello, welcome to this random container!
+        </h1>
+        <p>The id of this container is: <span id="random-string"></span></p>
+        <script>
+            var randomString = document.getElementById("random-string");
+            randomString.innerHTML = "{{RANDOM_STRING}}";
+        </script>
+    </body>
+</html>
