@@ -5,6 +5,7 @@ FROM nginx:alpine
 ENV RANDOM_STRING=""
 # take index.html from pwd and put it in docker container
 COPY index.html /usr/share/nginx/html/
+COPY style.css /usr/share/nginx/html/
 # do the same thing for the bash script
 COPY entrypoint.sh /
 #since it will run in the container we need to give it permission
