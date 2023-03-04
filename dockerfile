@@ -1,16 +1,17 @@
-#grab lightweight nginx
-FROM nginx:alpine
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim-buster
 
-#set our envirment variable for the random string to print
-ENV RANDOM_STRING=""
-# take index.html from pwd and put it in docker container
-COPY index.html /usr/share/nginx/html/
-COPY style.css /usr/share/nginx/html/
-# do the same thing for the bash script
-COPY entrypoint.sh /
-#since it will run in the container we need to give it permission
-RUN chmod +x /entrypoint.sh
-#entrypoint runs the script once the container starts
-ENTRYPOINT ["/entrypoint.sh"]
-#run nginx in the foreground to prevent exit
-CMD ["nginx", "-g", "daemon off;"]
+# Set the working directory to /app
+WORKDIR /app
+
+# Install Flask
+RUN pip install --no-cache-dir Flask
+
+# Copy the current directory contents into the container at /app
+COPY . .
+
+# Expose port 80 for the Flask app to listen on
+EXPOSE 80
+
+# Start the Flask app when the container launches
+CMD ["python", "app.py"]
