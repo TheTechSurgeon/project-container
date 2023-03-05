@@ -1,5 +1,5 @@
 # developerben/random-machine
-This is a Docker image that generates a random string and displays it on a Flask website. Oh and an fully functional CI/CD pipeline in a repo 
+This is a Docker image that generates a random string and displays it on a Flask website. Oh and a fully functional CI/CD pipeline in a repo 
 
 
 ## Step 1: Create a Simple Flask App
