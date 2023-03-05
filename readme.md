@@ -1,5 +1,5 @@
-#developerben/random-machine
-This is a Docker image that generates a random string and displays it on a Flask website. 
+# developerben/random-machine
+This is a Docker image that generates a random string and displays it on a Flask website. Oh and an fully functional CI/CD pipeline in a repo 
 
 
 ## Step 1: Create a Simple Flask App
@@ -29,4 +29,5 @@ Set up a monitoring system to track the app's performance and usage metrics. Con
 
 ## Step 6: Implement Configuration Management for the App
 Use a tool like Ansible or Puppet to manage and configure the app's infrastructure and dependencies. Automate deployment and configuration changes using a tool like Jenkins or GitLab.
+
 
