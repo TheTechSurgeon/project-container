@@ -6,11 +6,11 @@ This is a Docker image that generates a random string and displays it on a Flask
 ~~Create a simple Flask app that generates a random string.
 
 ### Future to-do's:
-Create or find a monolithic app
-Add more advanced functionality after setting up a CI/CD pipeline.
+- Create or find a monolithic app
+- Add more advanced functionality after setting up a CI/CD pipeline.
 
 ## Step 2: Add Security Features to the App
-Add HTTPS to the app. (CA-signed certificates can be added later.)
+~~Add HTTPS to the app. (CA-signed certificates can be added later.)
 
 ### Future to-do's:
 
