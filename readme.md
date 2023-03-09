@@ -20,9 +20,9 @@ Once advanced functionality is added that requires a database or other sensitive
 - Use secure secret storage.
 
 ## Step 3: Implement a CI/CD Pipeline for the App
-- Set up a version control system and push the code to a repository. 
-- Configure a CI system to automatically build and test the app whenever changes are made. 
-- Use a container registry to store and distribute Docker images of the app. 
+-  ~~Set up a version control system and push the code to a repository.~~ 
+- ~~Configure a CI system to automatically build and test the app whenever changes are made.~~ 
+- ~~Use a container registry to store and distribute Docker images of the app.~~ 
 - Use a container orchestration system to deploy and manage the app in production.
 
 ## Step 4: Add Automated Testing to the App
